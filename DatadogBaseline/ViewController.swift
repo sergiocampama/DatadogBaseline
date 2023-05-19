@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     label.backgroundColor = .red.withAlphaComponent(0.3)
 
     var attributedString = try! AttributedString(markdown: "BaselineTest")
-    attributedString.baselineOffset = 50
+    attributedString.baselineOffset = 100
 
     label.attributedText = NSAttributedString(attributedString)
   }
