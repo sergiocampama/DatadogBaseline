@@ -13,9 +13,18 @@
 		2D147AE72A17EB660010FB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147AE52A17EB660010FB03 /* Main.storyboard */; };
 		2D147AE92A17EB670010FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D147AE82A17EB670010FB03 /* Assets.xcassets */; };
 		2D147AEC2A17EB670010FB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147AEA2A17EB670010FB03 /* LaunchScreen.storyboard */; };
+		2D147B0B2A17ED2F0010FB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D147ADF2A17EB660010FB03 /* AppDelegate.swift */; };
+		2D147B0C2A17ED300010FB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D147AE12A17EB660010FB03 /* SceneDelegate.swift */; };
+		2D147B0D2A17ED320010FB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D147AE32A17EB660010FB03 /* ViewController.swift */; };
+		2D147B0E2A17ED360010FB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147AE52A17EB660010FB03 /* Main.storyboard */; };
+		2D147B0F2A17ED390010FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D147AE82A17EB670010FB03 /* Assets.xcassets */; };
+		2D147B102A17ED3B0010FB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D147AEA2A17EB670010FB03 /* LaunchScreen.storyboard */; };
+		772437880AB8DF46D6BB73E8 /* libPods-DatadogBaseline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA787E9DEB2949E3766BE37 /* libPods-DatadogBaseline.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052170D6C2C0D187F2645AEA /* Pods-DatadogBaseline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatadogBaseline.debug.xcconfig"; path = "Target Support Files/Pods-DatadogBaseline/Pods-DatadogBaseline.debug.xcconfig"; sourceTree = "<group>"; };
+		0BA3489820BF49300D4CB531 /* Pods-DatadogBaseline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatadogBaseline.release.xcconfig"; path = "Target Support Files/Pods-DatadogBaseline/Pods-DatadogBaseline.release.xcconfig"; sourceTree = "<group>"; };
 		2D147ADC2A17EB660010FB03 /* DatadogBaseline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatadogBaseline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D147ADF2A17EB660010FB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D147AE12A17EB660010FB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,10 +33,20 @@
 		2D147AE82A17EB670010FB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D147AEB2A17EB670010FB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D147AED2A17EB670010FB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D147AF72A17ED1F0010FB03 /* DatadogBaselineExpected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatadogBaselineExpected.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA787E9DEB2949E3766BE37 /* libPods-DatadogBaseline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DatadogBaseline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D147AD92A17EB660010FB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772437880AB8DF46D6BB73E8 /* libPods-DatadogBaseline.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D147AF42A17ED1F0010FB03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,8 @@
 			children = (
 				2D147ADE2A17EB660010FB03 /* DatadogBaseline */,
 				2D147ADD2A17EB660010FB03 /* Products */,
+				6A8D698DDF1733F6E794EA87 /* Pods */,
+				E9E844F28AC6E9D67CF24BC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				2D147ADC2A17EB660010FB03 /* DatadogBaseline.app */,
+				2D147AF72A17ED1F0010FB03 /* DatadogBaselineExpected.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +89,23 @@
 			path = DatadogBaseline;
 			sourceTree = "<group>";
 		};
+		6A8D698DDF1733F6E794EA87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				052170D6C2C0D187F2645AEA /* Pods-DatadogBaseline.debug.xcconfig */,
+				0BA3489820BF49300D4CB531 /* Pods-DatadogBaseline.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9E844F28AC6E9D67CF24BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABA787E9DEB2949E3766BE37 /* libPods-DatadogBaseline.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D147AF02A17EB670010FB03 /* Build configuration list for PBXNativeTarget "DatadogBaseline" */;
 			buildPhases = (
+				50A5C714DB061C14303FB11E /* [CP] Check Pods Manifest.lock */,
 				2D147AD82A17EB660010FB03 /* Sources */,
 				2D147AD92A17EB660010FB03 /* Frameworks */,
 				2D147ADA2A17EB660010FB03 /* Resources */,
@@ -87,6 +127,23 @@
 			productReference = 2D147ADC2A17EB660010FB03 /* DatadogBaseline.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2D147AF62A17ED1F0010FB03 /* DatadogBaselineExpected */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D147B0A2A17ED200010FB03 /* Build configuration list for PBXNativeTarget "DatadogBaselineExpected" */;
+			buildPhases = (
+				2D147AF32A17ED1F0010FB03 /* Sources */,
+				2D147AF42A17ED1F0010FB03 /* Frameworks */,
+				2D147AF52A17ED1F0010FB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatadogBaselineExpected;
+			productName = DatadogBaselineExpected;
+			productReference = 2D147AF72A17ED1F0010FB03 /* DatadogBaselineExpected.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +155,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2D147ADB2A17EB660010FB03 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					2D147AF62A17ED1F0010FB03 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -116,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				2D147ADB2A17EB660010FB03 /* DatadogBaseline */,
+				2D147AF62A17ED1F0010FB03 /* DatadogBaselineExpected */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +192,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D147AF52A17ED1F0010FB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D147B102A17ED3B0010FB03 /* LaunchScreen.storyboard in Resources */,
+				2D147B0F2A17ED390010FB03 /* Assets.xcassets in Resources */,
+				2D147B0E2A17ED360010FB03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50A5C714DB061C14303FB11E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatadogBaseline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D147AD82A17EB660010FB03 /* Sources */ = {
@@ -141,6 +237,16 @@
 				2D147AE42A17EB660010FB03 /* ViewController.swift in Sources */,
 				2D147AE02A17EB660010FB03 /* AppDelegate.swift in Sources */,
 				2D147AE22A17EB660010FB03 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D147AF32A17ED1F0010FB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D147B0D2A17ED320010FB03 /* ViewController.swift in Sources */,
+				2D147B0B2A17ED2F0010FB03 /* AppDelegate.swift in Sources */,
+				2D147B0C2A17ED300010FB03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +388,7 @@
 		};
 		2D147AF12A17EB670010FB03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052170D6C2C0D187F2645AEA /* Pods-DatadogBaseline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +416,7 @@
 		};
 		2D147AF22A17EB670010FB03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA3489820BF49300D4CB531 /* Pods-DatadogBaseline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +442,60 @@
 			};
 			name = Release;
 		};
+		2D147B082A17ED200010FB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DatadogBaseline/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DatadogBaselineExpected;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D147B092A17ED200010FB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DatadogBaseline/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DatadogBaselineExpected;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +513,15 @@
 			buildConfigurations = (
 				2D147AF12A17EB670010FB03 /* Debug */,
 				2D147AF22A17EB670010FB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D147B0A2A17ED200010FB03 /* Build configuration list for PBXNativeTarget "DatadogBaselineExpected" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D147B082A17ED200010FB03 /* Debug */,
+				2D147B092A17ED200010FB03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  DatadogBaseline
-//
-//  Created by Sergio Campama on 19/5/23.
-//
-
 import UIKit
 
 @main
